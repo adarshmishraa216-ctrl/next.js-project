@@ -2,7 +2,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   return (
     <div className="min-h-screen bg-gradient-to-r from-cyan-400 to-blue-500 text-white flex flex-col items-center justify-center p-10">
@@ -60,4 +60,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
