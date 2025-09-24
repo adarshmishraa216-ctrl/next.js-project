@@ -4,16 +4,16 @@ import Link from "next/link";
 const Page = () => {
   return (
     
-    <div className="flex relative min-h-screen">
+    <div className="flex flex-col md:flex-row relative min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-blue-900 text-white">
 
       
-      <section className="w-1/2 bg-blue-600 text-white flex flex-col justify-center items-center p-10 text-center">
+      <section className="w-full md:w-1/2 bg-blue-600 text-white flex flex-col justify-center items-center p-6 sm:p-8 md:p-10 text-center">
   <div className="flex flex-col items-center space-y-6"> 
     {/* Image */}
     <img
       src="https://jecrcuniversity.edu.in/wp-content/uploads/2023/02/7-THINGS-TO-MAKE-STUDENTS-LIFE-EASIER.jpg"
       alt="student"
-      className="w-160 rounded-lg shadow-lg"
+      className="w-full max-w-xl rounded-lg shadow-lg"
     />
 
     {/* Link */}
@@ -35,13 +35,13 @@ const Page = () => {
 
 
       
-      <section className="w-1/2 bg-sky-400 text-white flex flex-col justify-center items-center p-10 text-center">
+      <section className="w-full md:w-1/2 bg-sky-400 text-white flex flex-col justify-center items-center p-6 sm:p-8 md:p-10 text-center">
   <div className="flex flex-col items-center space-y-6">
     
     <img
       src="https://dynamicmedia.accenture.com/is/image/accenture/hero-experienced-professional-careers?ts=1738594385794&$1024-PNG$&fit=constrain&dpr=off"
       alt="experienced"
-      className=" w-140 rounded-lg shadow-lg"
+      className="w-full max-w-xl rounded-lg shadow-lg"
     />
 
     
@@ -63,7 +63,7 @@ const Page = () => {
 
 
       
-      <div className="absolute top-1/10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-8 bg rounded-lg shadow-2xl text-blue-600 bg-white font-bold text-xl">
+      <div className="md:absolute md:top-1/10 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 p-4 sm:p-6 bg rounded-lg shadow-2xl text-blue-600 bg-white font-bold text-lg md:text-xl mx-auto mt-4 md:mt-0">
         Choose any one
       </div>
   

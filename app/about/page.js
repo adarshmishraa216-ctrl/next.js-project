@@ -19,33 +19,32 @@ const About = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-cyan-400 to-blue-500 min-h-screen flex flex-col items-center p-10">
+    <div className="bg-gradient-to-br from-slate-900 via-indigo-900 to-blue-900 min-h-screen flex flex-col items-center p-6 sm:p-8">
       
       {/* Heading at the top */}
       <h1
         className="mb-10 text-4xl md:text-5xl font-extrabold text-center 
-               text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-purple-400 to-pink-800 
+               text-transparent bg-clip-text text-white 
                drop-shadow-lg hover:scale-105 transition-transform duration-300"
       >
         Let’s Connect
       </h1>
 
       {/* Image + Form */}
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-16 w-full max-w-4xl">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16 w-full max-w-4xl">
         
         {/* Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src="https://img.freepik.com/free-photo/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space_23-2148767055.jpg?semt=ais_hybrid&w=740&q=80"
             alt="Contact Us"
-            style={{ width: "500px" }}
-            className="rounded-3xl shadow-2xl"
+            className="w-full max-w-md rounded-3xl shadow-2xl"
           />
         </div>
 
         {/* Form */}
-        <div className="w-full md:w-1/2 p-6 rounded-xl shadow-lg bg-white/20 backdrop-blur-md text-white">
-          <h2 className="text-2xl font-bold mb-4 text-center">
+        <div className="w-full md:w-1/2 p-4 sm:p-6 rounded-xl shadow-lg bg-white/20 backdrop-blur-md text-white">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 text-center">
             Fill the Form
           </h2>
 

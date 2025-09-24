@@ -38,19 +38,16 @@ export default function CourseDetail() {
     );
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-cyan-400 to-blue-500 p-6">
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-slate-900 via-indigo-900 to-blue-900 p-6">
       {/* Card with description and back button */}
       <div className="max-w-4xl w-full p-6 md:p-8 bg-white/20 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/30 text-center flex flex-col gap-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 mb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-blue-200 mb-6">
           {course.title}
         </h1>
-        <p className="text-gray-100 text-lg md:text-xl">{course.description}</p>
+        <p className="text-indigo-100 text-lg md:text-xl">{course.description}</p>
 
         <button
-          className="px-6 py-3 bg-gradient-to-r from-white/80 via-blue-100 to-purple-100 
-                     text-gray-800 font-semibold rounded-xl shadow-lg 
-                     hover:scale-105 hover:bg-gradient-to-r hover:from-blue-200 hover:to-purple-200 
-                     transition transform duration-300"
+          className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:opacity-90 transition transform duration-300"
           onClick={() => history.back()}
         >
           Back
